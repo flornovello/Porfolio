@@ -1,0 +1,25 @@
+.navbar{
+	position: fixed;
+	z-index: 1000;
+	font-family: 'Titillium Web', sans-serif;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.logo{
+	font-weight: 700;
+	margin-left: 20px;
+}
+
+.slider .indicators .indicator-item{
+	height: 5px;
+    width: 5px;
+}
+
+.slider .indicators .indicator-item.active{
+	background-color: rgba(68, 68, 68, 0.66); 
+}
+
+.about{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}

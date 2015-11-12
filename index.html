@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Porfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,400italic,300italic,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+	<div>
+		<nav class="navbar">
+		    <div class="nav-wrapper">
+		      <a href="#" class="brand-logo logo">Florencia</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li><a href="#about">About</a></li>
+		        <li><a href="#works">Works</a></li>
+		        <li><a href="#contact">Contact</a></li>
+		      </ul>
+		    </div>
+		</nav>
+
+		 <div class="slider">
+		    <ul class="slides">
+		      <li>
+		        <img src="Imagenes/Slide1.jpg"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3>Hello</h3>
+		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="Imagenes/Slide2.jpg"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3>Left Aligned Caption</h3>
+		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="Imagenes/Slide3.jpg"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3>Right Aligned Caption</h3>
+		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		        </div>
+		      </li>
+		    </ul>
+		</div>
+		
+	</div>
+
+	<section id="about" class="row about">
+		<div class="col s8 offset-s2">
+			<article class="col s6">
+				<h3>About</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus a incidunt maxime dolore, commodi nulla ea voluptatem quis quo eaque. Placeat enim animi assumenda quasi earum asperiores deleniti reiciendis.</p>
+			</article>
+			<img src="http://daleconellook.com/wp-content/uploads/2015/08/Cara-Delevingne-3.jpg" class="col s6 responsive-img">
+
+		</div>
+	</section>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
+<script type="text/javascript">
+
+ $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+
+ </script>
+	
+</body>
+
+  
+ 
+
+</html>
