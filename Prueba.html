@@ -8,6 +8,8 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 	<link rel="stylesheet" type="text/css" href="Prueba.css">
 
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -15,7 +17,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default menu-barra navbar-fixed-top">
+<nav class="navbar navbar-default menu-barra navbar-fixed-top nave">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -69,7 +71,7 @@
 	<div>
 		<h2 class="frase-p">"I woke up and realized life is great and people<br>are awesome and life is worth living."<br><span class="frase-abajo">Hulk Hogan</span></h2>
 	</div>
-</section>			
+</section>
 
 <section id="work" class="container-fluid row work">
 
@@ -80,6 +82,7 @@
 		</article>
 		<div class="work-cont">
 		<a href="#"><img src="Imagenes/tp1.jpg" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 img-responsive work-th" ></a>
+
 		
 
 		<!-- Lo que quise hacer y no me salio, hay que agregarle eso -> data-toggle="modal" data-target="#myModal" a la img
@@ -103,7 +106,6 @@
 		<img src="Imagenes/tp6.jpg" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 img-responsive work-th">
 		</div>
 	</div>
-
 </section>
 
 
@@ -139,9 +141,14 @@
 	      <button class="col s2 offset-s10 boton">Send!</button>
 	    </form>
 	</div>
+</section>
 
-	
-
+<section class="redes">
+		<div class="redes-contenedor">
+			<a href=""><i class="fa fa-behance"></i></a>
+			<a href=""><i class="fa fa-instagram"></i></a>
+			<a href=""><i class="fa fa-github"></i></a>
+		</div>
 </section>
 
 
@@ -161,6 +168,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
 <script src="jquery.js"></script>
 <script type="text/javascript">
+	
+	$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('.nave');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('.nave').css('background-color', 'rgba(34,34,34,0.55)');
+       } else {
+          $('.nave').css('background-color', 'transparent');
+       }
+   });
+});
 
 </script>
 </body>
